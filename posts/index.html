@@ -55,7 +55,7 @@
         
         <a class="gdoc-header__link" href="https://geekoops.github.io/">
             <span class="gdoc-brand flex align-center">
-                <img class="gdoc-brand__img" src="/brand.svg" alt="">
+                <img class="gdoc-brand__img" src="/logo.png" alt="">
                 GeekOops - SysOps for Geekos
             </span>
         </a>
@@ -122,7 +122,83 @@
             <li>
             
             
-                <span class="flex">Welcome</span>
+                <span class="flex">
+                    <a href="/posts/20210326-next/" class="gdoc-nav__entry ">
+                        Ansible NEXT server
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/posts/20210326-ansible-nginx/" class="gdoc-nav__entry ">
+                        Ansible nginx
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/posts/20210326-php-fpm/" class="gdoc-nav__entry ">
+                        Ansible php-fpm
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/posts/20210326-pureftpd/" class="gdoc-nav__entry ">
+                        Ansible PureFTPd
+                    </a>
+                </span>
             
             
 
@@ -159,18 +235,91 @@
     
         <article class="gdoc-markdown gdoc-post">
             <header class="gdoc-post__header">
-                <h1 class="gdoc-post__title"><a href="/posts/welcome/">Welcome</a></h1>
+                <h1 class="gdoc-post__title"><a href="/posts/20210326-next/">Ansible NEXT server</a></h1>
                 <div class="gdoc-post__date">
                     <svg class="icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
-                    <time datetime="2021-03-26T08:55:35&#43;01:00">
+                    <time datetime="2021-03-26T09:54:20&#43;01:00">
                         
                         Mar 26, 2021
                     </time>
                 </div>
             </header>
             <section>
-                
+                The geekoops-next ansible role makes it easy to setup your own PXE boot server. It configures dnsmasq to run a DHCP and TFTP server, from which your PXE clients can boot from. You can turn the DNS functionality of dnsmasq off, so that it is possible to run this PXE server next to another DNS server on the same host.
+This role also extracts a minimum syslinux installation into your tftp directory.
             </section>
+            
+            <div class="gdoc-post__readmore">
+                <a class="flex-inline align-center fake-link" title="Read full post" href="/posts/20210326-next/">Read full post</a>
+            </div>
+            
+        </article>
+    
+        <article class="gdoc-markdown gdoc-post">
+            <header class="gdoc-post__header">
+                <h1 class="gdoc-post__title"><a href="/posts/20210326-pureftpd/">Ansible PureFTPd</a></h1>
+                <div class="gdoc-post__date">
+                    <svg class="icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+                    <time datetime="2021-03-26T09:49:33&#43;01:00">
+                        
+                        Mar 26, 2021
+                    </time>
+                </div>
+            </header>
+            <section>
+                The geekoops-pureftpd role is a configurable ansible role for setting up a PureFTPd ftp server. I choose PureFTPd because it appears to be more secure than ProFTPd. In comparison to vsftp, one server program can run both IPv4 and IPv6.
+This role works on openSUSE Leap.
+Role Variables    PureFTPd is a highly configurable ansible role. See the following list of possible variables, but you probably don&rsquo;t need much of them.
+            </section>
+            
+            <div class="gdoc-post__readmore">
+                <a class="flex-inline align-center fake-link" title="Read full post" href="/posts/20210326-pureftpd/">Read full post</a>
+            </div>
+            
+        </article>
+    
+        <article class="gdoc-markdown gdoc-post">
+            <header class="gdoc-post__header">
+                <h1 class="gdoc-post__title"><a href="/posts/20210326-php-fpm/">Ansible php-fpm</a></h1>
+                <div class="gdoc-post__date">
+                    <svg class="icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+                    <time datetime="2021-03-26T09:42:03&#43;01:00">
+                        
+                        Mar 26, 2021
+                    </time>
+                </div>
+            </header>
+            <section>
+                The geekoops-php-fpm role is intended as a standalone php-fpm deployment that works in conjunction with any webserver. I use it with nginx in production. In principle it should also work together with apache2, but that&rsquo;s something currently untested.
+This role works with openSUSE Leap and is intended to ship enough requirements for most web applications to run. I run it in conjunction with Mediawiki and Nextcloud.
+Role Variables    This ansible role comes with a minimal set of configuration parameters.
+            </section>
+            
+            <div class="gdoc-post__readmore">
+                <a class="flex-inline align-center fake-link" title="Read full post" href="/posts/20210326-php-fpm/">Read full post</a>
+            </div>
+            
+        </article>
+    
+        <article class="gdoc-markdown gdoc-post">
+            <header class="gdoc-post__header">
+                <h1 class="gdoc-post__title"><a href="/posts/20210326-ansible-nginx/">Ansible nginx</a></h1>
+                <div class="gdoc-post__date">
+                    <svg class="icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+                    <time datetime="2021-03-26T09:27:50&#43;01:00">
+                        
+                        Mar 26, 2021
+                    </time>
+                </div>
+            </header>
+            <section>
+                Welcome to GeekOops! This is my first role of the project. The role is as simple as it suggests. It installs nginx and optionally opens the firewall ports.
+Usage example    Let&rsquo;s assume we want to roll this role out on our imaginary jellyfish server. We need to have root ssh access to jellyfish. Ansible also supports sudo, but this is not covered here. So first make sure you can do the following
+            </section>
+            
+            <div class="gdoc-post__readmore">
+                <a class="flex-inline align-center fake-link" title="Read full post" href="/posts/20210326-ansible-nginx/">Read full post</a>
+            </div>
             
         </article>
     
@@ -219,7 +368,7 @@
 
 
 
-<script defer src="/js/en.search.min.729a1786df29e4aa42b382bb1af1af60c3f8950f3e0188c4eae401a36c360e19.js"></script>
+<script defer src="/js/en.search.min.c8e955343bfe0248e415a4d6686a21b8f6429bd355a3613448fadf17bfdae324.js"></script>
 
 
 
