@@ -6,7 +6,18 @@
     <description>Recent content in Posts on GeekOops - SysOps for Geekos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Mar 2021 09:54:20 +0100</lastBuildDate><atom:link href="https://geekoops.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Mar 2021 10:49:29 +0100</lastBuildDate><atom:link href="https://geekoops.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example: Webserver (nginx&#43;php-fpm)</title>
+      <link>https://geekoops.github.io/posts/20210326-example-webserver/</link>
+      <pubDate>Fri, 26 Mar 2021 10:49:29 +0100</pubDate>
+      
+      <guid>https://geekoops.github.io/posts/20210326-example-webserver/</guid>
+      <description>In this post we are going to setup our example jellyfish host to run nginx and php-fpm. The provided example playbook should be a good starting point for your own webserver.
+In addition, the exaple playbook also setups the jellyfish.conf nginx virtual host file to run php files with php-fpm and we create a typical phpinfo.php file to test our setup
+Example    This example playbook sets up a webserver with nginx and php-fpm.</description>
+    </item>
+    
     <item>
       <title>Ansible NEXT server</title>
       <link>https://geekoops.github.io/posts/20210326-next/</link>
