@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on GeekOops - SysOps for Geekos</title>
-    <link>https://geekoops.github.io/tags/</link>
-    <description>Recent content in Tags on GeekOops - SysOps for Geekos</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://geekoops.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on GeekOops - SysOps for Geekos</title><link>https://geekoops.github.io/tags/</link><description>Recent content in Tags on GeekOops - SysOps for Geekos</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 05 May 2021 13:35:03 +0200</lastBuildDate><atom:link href="https://geekoops.github.io/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>nginx</title><link>https://geekoops.github.io/tags/nginx/</link><pubDate>Wed, 05 May 2021 13:35:03 +0200</pubDate><guid>https://geekoops.github.io/tags/nginx/</guid><description/></item><item><title>tutorial</title><link>https://geekoops.github.io/tags/tutorial/</link><pubDate>Wed, 05 May 2021 13:35:03 +0200</pubDate><guid>https://geekoops.github.io/tags/tutorial/</guid><description/></item></channel></rss>
